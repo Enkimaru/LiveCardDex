@@ -1,0 +1,73 @@
+a {
+  text-decoration: none;
+}
+.page-header {
+  margin: auto;
+  width: 213px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #e59090;
+  padding: 10px;
+  text-align: center;
+}
+
+.page-header-tag {
+  color: white;
+}
+
+.pokemon-card {
+  width: 70px;
+  height: 100px;
+  border: 4px inset black;
+  display: flex;
+  justify-content: center;
+  float: left;
+  margin: 0.15%;
+}
+
+.pokemon-image {
+  width: 45px;
+  height: 45px;
+  margin: 5px auto 0;
+  outline: 2px solid black;
+  display: flex;
+  background-color: white;
+}
+
+.locked {
+  filter: grayscale(100%);
+  background-color: rgb(138, 136, 136);
+}
+
+.locked * {
+  filter: grayscale(100%);
+  background-color: rgb(187, 186, 186);
+}
+
+.foil {
+  background: linear-gradient(
+    to bottom right,
+    #ffa2c5,
+    #ffe1a8,
+    #f0f0f0,
+    #a8e3fc,
+    #d9a6ff,
+    #ffa2c5
+  );
+  background-attachment: fixed;
+  background-size: 300% 300%;
+  background-position: center;
+  animation: iridescent 5s ease-in-out infinite;
+}
+
+@keyframes iridescent {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
